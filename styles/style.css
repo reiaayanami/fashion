@@ -1,0 +1,862 @@
+:root {
+  --primaryBlack: #000;
+  --primaryWhite: #ffffff;
+  --beige: #ecd8cc;
+  --pink: #e99cb5;
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+/* header/nav */
+header {
+  height: 50px;
+  width: 100%;
+}
+.navHeader {
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 28px;
+  align-items: center;
+}
+#title {
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--primaryBlack);
+  margin-right: 200px;
+  transition: color 0.3s ease;
+  line-height: 39.01px;
+}
+#title:hover {
+  color: var(--pink);
+}
+.linksToSections a {
+  color: #303030;
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 60px;
+  transition: color 0.3s ease;
+  line-height: 19.5px;
+}
+.navHeader a:hover {
+  color: var(--pink);
+}
+.linksToSections {
+  margin-right: 207px;
+}
+.iconsNav a {
+  margin-left: 9px;
+}
+
+/* main  */
+/* section first */
+.sectionFirst {
+  display: grid;
+  grid-template-columns: 80px 640px 1fr 1fr;
+  grid-template-rows: 100px 250px 200px 139px;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../bckImages/bckNew.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.sideIcons {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #ebebeb;
+  padding-top: 132px;
+}
+.sideIcons img {
+  margin-bottom: 33px;
+}
+#followUs {
+  transform: rotate(-90deg);
+  text-align: right;
+  margin-top: 70px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: var(--primaryBlack);
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+#followUs:hover {
+  color: var(--pink);
+}
+
+.bck {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.colection {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.colection span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 25px;
+}
+.colection h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 85.59px;
+}
+.colection #num {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24.38px;
+}
+.colection p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #303030;
+}
+.about {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.about img {
+  margin-right: 24px;
+}
+.about p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14.63px;
+  letter-spacing: 0%;
+  margin-top: 16px;
+}
+.about button {
+  background-color: var(--primaryBlack);
+  color: var(--primaryWhite);
+  font-size: 10px;
+  padding: 8px 7px;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  width: 117px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+.about button:hover {
+  background-color: var(--pink);
+}
+.ads {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  background-image: url(../bckImages/bckADSNew.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 92%;
+  width: 487px;
+  height: 406px;
+  padding-top: 17px;
+}
+
+.timer {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.timeHOurs,
+.timeMinutes,
+.timeSeconds {
+  background-color: var(--primaryWhite);
+  padding: 14px 16px;
+  width: 67px;
+  height: 80px;
+  border-radius: 12px;
+}
+#hours,
+#minutes,
+#seconds {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.26px;
+}
+.ads h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29.26px;
+  color: var(--primaryWhite);
+  margin-top: 30px;
+}
+.ads h2,
+.specialPropose,
+.specialProposePrice,
+.timer {
+  margin-left: 150px;
+}
+.ads h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29.26px;
+  color: var(--primaryWhite);
+}
+.oldPrice {
+  text-decoration: line-through;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12.19px;
+  color: var(--primaryWhite);
+  margin-top: 10px;
+}
+.newPrice {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: var(--primaryWhite);
+  margin-top: 10px;
+}
+.specialPropose {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: var(--primaryWhite);
+}
+.specialProposePrice {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+.ads button {
+  background-color: var(--beige);
+  color: var(--primaryBlack);
+  font-size: 10px;
+  padding: 8px 7px;
+  border-radius: 28px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  width: 117px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+.ads button:hover {
+  background-color: var(--pink);
+}
+/* section second */
+
+.menuList {
+  text-align: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  margin-top: 76px;
+}
+.menuList a {
+  margin-right: 44px;
+  color: var(--primaryBlack);
+  transition: color 0.3s ease;
+  align-items: center;
+}
+.menuList a:hover {
+  color: var(--pink);
+}
+.adsSectionSecond {
+  display: grid;
+  grid-template-columns: 320px 270px 30px 287px 30px 270px 320px;
+  grid-template-rows: 180px 176px 30px 167px;
+  margin-top: 77px;
+}
+.adsSectionSecond a {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 14.63px;
+  letter-spacing: 0%;
+}
+.first {
+  padding: 20px;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url(../adsSectionSecondImages/shoesSectionSecond.svg);
+}
+.first a {
+  color: var(--primaryBlack);
+  font-weight: 800;
+  font-size: 12px;
+
+  text-transform: uppercase;
+}
+.second {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(../adsSectionSecondImages/womanWithBagSectionSecond.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 50px;
+}
+.third {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-image: url(../adsSectionSecondImages/womanInBathSectionSecond.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.third a {
+  color: var(--primaryBlack);
+  margin-top: 230px;
+  margin-left: 13px;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 12.19px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+.third button {
+  background-color: var(--primaryBlack);
+  color: var(--primaryWhite);
+  font-size: 10px;
+  padding: 8px 7px;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  margin-left: 13px;
+  transition: background-color 0.3s ease;
+}
+.third button:hover {
+  background-color: var(--pink);
+}
+.third button a {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12.19px;
+  color: var(--primaryWhite);
+  margin-right: 10px;
+}
+.four {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url(../adsSectionSecondImages/womanInJacketSectionSecond.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.four a {
+  color: var(--primaryBlack);
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 12.19px;
+  margin-bottom: 11px;
+  margin-left: 13px;
+  margin-top: 23px;
+  text-transform: uppercase;
+}
+.four button {
+  background-color: var(--primaryBlack);
+  color: var(--primaryWhite);
+  font-size: 10px;
+  padding: 8px 7px;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  width: 116px;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+.four button:hover {
+  background-color: var(--pink);
+}
+.four button a {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12.19px;
+  color: var(--primaryWhite);
+  text-align: center;
+  margin-left: -5px;
+}
+
+.five {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(../adsSectionSecondImages/glassesSectionSecond.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 70px;
+}
+.five a {
+  color: var(--primaryBlack);
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 12.19px;
+  text-transform: uppercase;
+}
+.six {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: url(../adsSectionSecondImages/womanAndMenSectionSecond.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.six .firstPart {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: var(--primaryBlack);
+  text-transform: uppercase;
+  margin-top: 42px;
+  margin-left: 467px;
+  margin-bottom: 7px;
+}
+.six .secondPart {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: var(--primaryBlack);
+  text-transform: uppercase;
+  margin-left: 498px;
+}
+.six button {
+  background-color: var(--primaryWhite);
+  padding: 8px 7px;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  width: 219px;
+  height: 42px;
+  margin-left: 540px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.six button:hover {
+  background-color: var(--pink);
+}
+
+.six button a {
+  color: var(--primaryBlack);
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12.19px;
+  text-transform: uppercase;
+}
+/* section third */
+
+.titleSectionThird {
+  text-align: center;
+  margin-top: 105px;
+}
+.sliderWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.sliderContainer {
+  overflow: hidden;
+  width: 960px;
+}
+.sliderCategories {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+}
+.prebtn {
+  width: 108px;
+  height: 40px;
+  background-color: #9d9d9d;
+  transform: rotate(-90deg);
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primaryWhite);
+  left: 0;
+  margin-left: 200px;
+  transition: background-color 0.3s ease;
+}
+.prebtn:hover {
+  background-color: #626262;
+}
+.nextbtn {
+  cursor: pointer;
+  width: 108px;
+  height: 40px;
+  background-color: #9d9d9d;
+  transform: rotate(90deg);
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primaryWhite);
+  right: 0;
+  margin-right: 200px;
+  transition: background-color 0.3s ease;
+}
+.nextbtn:hover {
+  background-color: #626262;
+}
+
+.categoryCard {
+  min-width: 300px;
+  flex-shrink: 0;
+}
+.categoryLink {
+  position: relative;
+  bottom: 100px;
+  left: 89px;
+  transform: none;
+}
+.categoryLink button {
+  background-color: var(--primaryBlack);
+  padding: 14px 9px;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  width: 122px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.categoryLink button:hover {
+  background-color: var(--pink);
+}
+.categoryLink button a {
+  font-weight: 600;
+  font-size: 10px;
+  color: var(--primaryWhite);
+  text-transform: uppercase;
+}
+/* sectionFour */
+
+.sectionFour {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.sectionFour h2 {
+  text-align: center;
+}
+.sliderWrapperSecond {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 54px;
+}
+.sliderWrapperSecond .prebtnSecond {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+.sliderWrapperSecond .nextbtnSecond {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.sliderContainerSecond {
+  width: 900px;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.sliderItem {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+  justify-content: flex-start;
+}
+.nameOfItem {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primaryBlack);
+}
+.itemCard p {
+  margin-top: 2px;
+}
+.price {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.oldItemPrice {
+  font-weight: 400;
+  font-size: 10px;
+  color: var(--primaryBlack);
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+.newItemPrice {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--primaryBlack);
+  margin-right: 12px;
+}
+.sectionFour .showMore {
+  background-color: var(--primaryBlack);
+  color: var(--primaryWhite);
+  border: none;
+  padding: 14px 11px;
+  border-radius: 28px;
+  cursor: pointer;
+  width: 200px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 38px;
+}
+.sectionFour .showMore:hover {
+  background-color: var(--pink);
+}
+.sectionFour .showMore a {
+  font-weight: 600;
+  font-size: 10px;
+  color: var(--primaryWhite);
+  text-transform: uppercase;
+}
+/* sectionFive */
+.sectionFive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.adsSectionFive {
+  background-image: url(../adsSectionFiveImage/girlJeansSectionFive.svg);
+  background-size: cover;
+  background-position: center;
+  width: 920px;
+  height: 195px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 140px;
+  justify-content: center;
+}
+
+.adsSectionFive h3 {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.adsSectionFive p {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+.adsSectionFive button {
+  margin-top: 22px;
+  background-color: var(--primaryBlack);
+  padding: 15px 20px;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+
+  width: 300;
+  height: 50;
+  border-radius: 28px;
+  transition: background-color 0.3s ease;
+}
+.adsSectionFive button a {
+  font-weight: 600;
+  font-size: 10px;
+  color: var(--primaryWhite);
+  text-transform: uppercase;
+}
+.adsSectionFive button:hover {
+  background-color: var(--pink);
+}
+
+/* sectionSix */
+
+.sectionSix {
+  padding-top: 98px;
+  margin-bottom: -100px;
+}
+.sectionSix h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.sliderBlog {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogCard {
+  position: relative;
+}
+
+.blogImage img {
+  width: 100%;
+  display: block;
+}
+
+.titleAndDate {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primaryWhite);
+  padding: 10px 20px;
+  text-align: center;
+  width: max-content;
+}
+
+.timeBlog {
+  font-weight: 600;
+  font-size: 10px;
+  color: #9d9d9d;
+  margin-top: 2px;
+  text-transform: uppercase;
+}
+.titleBlog {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--primaryBlack);
+}
+.blogCard {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.blogCard:hover {
+  transform: scale(1.05);
+}
+
+.blogImage {
+  overflow: hidden;
+}
+
+.blogImage img {
+  transition: transform 0.3s ease;
+}
+
+.blogCard:hover .blogImage img {
+  transform: scale(1.1);
+}
+
+/* footer */
+footer {
+  background-color: #ebebeb;
+  padding-top: 210px;
+}
+
+.columns {
+  margin-bottom: 97px;
+  display: flex;
+  gap: 110px;
+  display: flex;
+  justify-content: center;
+}
+.columns h3 {
+  font-weight: 700;
+  font-size: 12px;
+  color: #595959;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.columns a {
+  font-weight: 700;
+  font-size: 11px;
+  color: #9d9d9d;
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+.columns a:hover {
+  color: #626262;
+}
+.columnInformation,
+.columnProfile,
+.columnYourAccount,
+.columnLookBook,
+.columnContacts {
+  display: flex;
+  flex-direction: column;
+}
+.copy {
+  padding-top: 45px;
+  text-align: center;
+  background-color: var(--primaryWhite);
+  margin-bottom: 50px;
+}
+.copy h1 {
+  font-weight: 500;
+  font-size: 32px;
+}
+.copy p {
+  font-weight: 500;
+  font-size: 11px;
+  color: #818181;
+}
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: var(--primaryBlack);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}

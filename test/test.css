@@ -1,0 +1,44 @@
+.sliderWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sliderContainer {
+  width: 940px; /* 3 картки по 200px + 2 проміжки по 20px */
+  overflow: hidden;
+}
+
+.sliderCategories {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.categoryCard {
+  min-width: 300px;
+  flex-shrink: 0; /* Щоб картки не стискалися */
+}
+
+.prebtn,
+.nextbtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prebtn {
+  left: 10px;
+}
+
+.nextbtn {
+  right: 10px;
+}

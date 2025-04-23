@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg" href="icons/iconDoc.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <title>Fashion</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navHeader">
+        <a href="" id="title">FASHION</a>
+        <div class="linksToSections">
+          <a href="">головна</a>
+          <a href="#catalog">розділи</a>
+          <a href="#reccomanded">рекомендовані товари</a>
+          <a href="#news">новини і блоги</a>
+        </div>
+        <div class="iconsNav">
+          <a href=""><img src="icons/basket.svg" alt="" /></a>
+          <a href=""><img src="icons/search.svg" alt="" /></a>
+          <a href=""><img src="icons/burgerMenu.svg" alt="" /></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <button id="scrollToTop">↑</button>
+      <section class="sectionFirst">
+        <div class="sideIcons">
+          <a href=""><img src="icons/instagram.svg" alt="" /></a>
+          <a href=""><img src="icons/facebook.svg" alt="" /></a>
+          <a href=""><img src="icons/tiktok.svg" alt="" /></a>
+          <a href=""><img src="icons/internet.svg" alt="" /></a>
+          <a href="" id="followUs">підпишись на нас</a>
+        </div>
+        <div class="colection">
+          <h1>
+            Літня <br />
+            колекція
+          </h1>
+          <span>
+            <p id="num">01</p>
+            <p>жіночий одяг</p>
+          </span>
+        </div>
+        <div class="about">
+          <img src="icons/next.svg" alt="" />
+          <img src="icons/like.svg" alt="" />
+          <img src="icons/share.svg" alt="" />
+          <p>
+            Відкрийте для себе найкращі колекції одягу, створені для комфорту та
+            стилю. Наш асортимент поєднує трендовий дизайн, якісні матеріали та
+            доступні ціни. Оберіть свій ідеальний образ просто зараз!
+          </p>
+          <button>КУПИТИ ЗАРАЗ</button>
+        </div>
+        <div class="ads">
+          <h2>
+            Спеціальна <br />
+            пропозиція місяця!
+          </h2>
+          <p class="specialPropose">Чорно-білий лонгслів</p>
+          <span class="specialProposePrice">
+            <p class="oldPrice">3000грн</p>
+            <p class="newPrice">1998грн</p>
+            <button>КУПИТИ ЗАРАЗ</button>
+          </span>
+          <div class="timer">
+            <div class="timeHOurs">
+              <p id="hours">00</p>
+              <p>...</p>
+              <p>годин</p>
+            </div>
+            <div class="timeMinutes">
+              <p id="minutes">00</p>
+              <p>...</p>
+              <p>хвилин</p>
+            </div>
+            <div class="timeSeconds">
+              <p id="seconds">00</p>
+              <p>...</p>
+              <p>секунд</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sectionSecond">
+        <nav class="menuList">
+          <a href="">все</a>
+          <a href="">весна-літо</a>
+          <a href="">світшоти</a>
+          <a href="">снікерси</a>
+          <a href="">гаджети</a>
+          <a href="">відкритий одяг</a>
+        </nav>
+        <div class="adsSectionSecond">
+          <div class="first">
+            <a href=""
+              >купуйте <br />
+              другу пару <br />
+              із знижкою <br />
+              50%</a
+            >
+          </div>
+          <div class="second"></div>
+          <div class="third">
+            <a href=""
+              >Вінтажний лук <br />
+              для жінок</a
+            >
+            <button><a href="">купити зараз</a></button>
+          </div>
+          <div class="four">
+            <a href="">Зимова мода</a>
+            <button><a href="">купити зараз</a></button>
+          </div>
+          <div class="five">
+            <a href="">-40% на сонячні окуляри</a>
+          </div>
+          <div class="six">
+            <a href="" class="firstPart">ми пропонуємо абсолютно нові стилі</a>
+            <a href="" class="secondPart"
+              >зареєструйтесь зараз і отримайте знижку -50%</a
+            >
+            <button><a href="">переглянути повну колекцію</a></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="sectionThird">
+        <div class="titleSectionThird">
+          <h2 id="catalog">Розділи</h2>
+          <p>знижки до 30%</p>
+        </div>
+
+        <div class="sliderWrapper">
+          <button class="prebtn">назад</button>
+          <div class="sliderContainer">
+            <div class="sliderCategories">
+              <div class="categoryCard">
+                <div class="categoryImage">
+                  <img
+                    src="../sliderSectionThirdImages/mansClothes.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="categoryLink">
+                  <button><a href="">чоловічий одяг</a></button>
+                </div>
+              </div>
+              <div class="categoryCard">
+                <div class="categoryImage">
+                  <img
+                    src="../sliderSectionThirdImages/womansClothes.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="categoryLink">
+                  <button><a href="">жіночий одяг</a></button>
+                </div>
+              </div>
+              <div class="categoryCard">
+                <div class="categoryImage">
+                  <img
+                    src="../sliderSectionThirdImages/kidsClothes.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="categoryLink">
+                  <button><a href="">дитячий одяг</a></button>
+                </div>
+              </div>
+              <div class="categoryCard">
+                <div class="categoryImage">
+                  <img
+                    src="../sliderSectionThirdImages/mansClothes.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="categoryLink">
+                  <button><a href="">взуття</a></button>
+                </div>
+              </div>
+              <div class="categoryCard">
+                <div class="categoryImage">
+                  <img
+                    src="../sliderSectionThirdImages/womansClothes.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="categoryLink">
+                  <button><a href="">аксесуари</a></button>
+                </div>
+              </div>
+              <div class="categoryCard">
+                <div class="categoryImage">
+                  <img
+                    src="../sliderSectionThirdImages/mansClothes.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="categoryLink">
+                  <button><a href="">взуття</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="nextbtn">далі</button>
+        </div>
+      </section>
+
+      <section class="sectionFour">
+        <h2 id="reccomanded">Рекомендовані товари</h2>
+        <nav class="menuList">
+          <a href="">все</a>
+          <a href="">весна-літо</a>
+          <a href="">світшоти</a>
+          <a href="">снікерси</a>
+          <a href="">гаджети</a>
+          <a href="">відкритий одяг</a>
+        </nav>
+        <!-- slider -->
+
+        <div class="sliderWrapperSecond">
+          <button class="prebtnSecond">
+            <img src="icons/prebtn.svg" alt="" />
+          </button>
+
+          <div class="sliderContainerSecond">
+            <div class="sliderItem">
+              <div class="itemCard">
+                <div class="itemImage">
+                  <img src="/sliderSectionFourImages/mansSweater.svg" alt="" />
+                </div>
+                <p class="nameOfItem">Чоловічий светр</p>
+                <p>Gucci</p>
+                <div class="price">
+                  <p class="oldItemPrice">2340грн</p>
+                  <p class="newItemPrice">1998грн</p>
+                  <a href=""> <img src="icons/add.svg" alt="" /></a>
+                </div>
+              </div>
+              <div class="itemCard">
+                <div class="itemImage">
+                  <img src="/sliderSectionFourImages/blueShirt.svg" alt="" />
+                </div>
+                <p class="nameOfItem">Блакитна сорочка</p>
+                <p>Gucci</p>
+                <div class="price">
+                  <p class="oldItemPrice">2340грн</p>
+                  <p class="newItemPrice">1998грн</p>
+                  <a href=""> <img src="icons/add.svg" alt="" /></a>
+                </div>
+              </div>
+              <div class="itemCard">
+                <div class="itemImage">
+                  <img src="/sliderSectionFourImages/womansLong.svg" alt="" />
+                </div>
+                <p class="nameOfItem">Жіноча кофта</p>
+                <p>Gucci</p>
+                <div class="price">
+                  <p class="oldItemPrice">2340грн</p>
+                  <p class="newItemPrice">1998грн</p>
+                  <a href=""> <img src="icons/add.svg" alt="" /></a>
+                </div>
+              </div>
+              <div class="itemCard">
+                <div class="itemImage">
+                  <img src="/sliderSectionFourImages/bodyBlack.svg" alt="" />
+                </div>
+                <p class="nameOfItem">Боді чорне</p>
+                <p>Gucci</p>
+                <div class="price">
+                  <p class="oldItemPrice">2340грн</p>
+                  <p class="newItemPrice">1998грн</p>
+                  <a href=""> <img src="icons/add.svg" alt="" /></a>
+                </div>
+              </div>
+              <div class="itemCard">
+                <div class="itemImage">
+                  <img src="/sliderSectionFourImages/mansSweater.svg" alt="" />
+                </div>
+                <p class="nameOfItem">Чоловічий светр</p>
+                <p>Gucci</p>
+                <div class="price">
+                  <p class="oldItemPrice">2340грн</p>
+                  <p class="newItemPrice">1998грн</p>
+                  <a href=""> <img src="icons/add.svg" alt="" /></a>
+                </div>
+              </div>
+              <div class="itemCard">
+                <div class="itemImage">
+                  <img src="/sliderSectionFourImages/mansSweater.svg" alt="" />
+                </div>
+                <p class="nameOfItem">Чоловічий светр</p>
+                <p>Gucci</p>
+                <div class="price">
+                  <p class="oldItemPrice">2340грн</p>
+                  <p class="newItemPrice">1998грн</p>
+                  <a href=""> <img src="icons/add.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="nextbtnSecond">
+            <img src="icons/nextbtn.svg" alt="" class="nextbtnSecond" />
+          </button>
+        </div>
+        <button class="showMore"><a href="">показати більше</a></button>
+      </section>
+
+      <section class="sectionFive">
+        <div class="adsSectionFive">
+          <h3>підпишіться на нашу розсилку</h3>
+          <p>і отримайте знижку до 75%</p>
+          <button><a href="">підписатися зараз</a></button>
+        </div>
+      </section>
+
+      <section class="sectionSix">
+        <h2 id="news">Наші новини і блоги</h2>
+        <div class="sliderBlog">
+          <a href="#" class="blogCard">
+            <div class="blogImage">
+              <img src="/sliderSectionSixImages/womenBlackDress.svg" alt="" />
+            </div>
+            <div class="titleAndDate">
+              <p class="titleBlog">15 секретів про відомих модників</p>
+              <p class="timeBlog">30 листопада 2024</p>
+            </div>
+          </a>
+
+          <a href="#" class="blogCard">
+            <div class="blogImage">
+              <img src="/sliderSectionSixImages/couple.svg" alt="" />
+            </div>
+            <div class="titleAndDate">
+              <p class="titleBlog">15 секретів про відомих модників</p>
+              <p class="timeBlog">30 листопада 2024</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        <div class="columns">
+          <div class="columnInformation">
+            <h3>Інформація</h3>
+            <a href="">Бренд</a>
+            <a href="">Магазини поблизу</a>
+            <a href="">Обслуговування клієнтів</a>
+            <a href="">Карта сайту</a>
+            <a href="">Конфіденційність і cookie</a>
+          </div>
+          <div class="columnProfile">
+            <h3>мій профіль</h3>
+            <a href="">Початок роботи</a>
+            <a href="">FAQ</a>
+            <a href="">Покупки</a>
+            <a href="">Повернення</a>
+            <a href="">Союзницька програма</a>
+          </div>
+          <div class="columnYourAccount">
+            <h3>Ваш аккаунт</h3>
+            <a href="">Доставка та повернення</a>
+            <a href="">Безпечні покупки</a>
+            <a href="">Відгуки</a>
+            <a href="">Нагороди</a>
+            <a href="">Етична торгівля</a>
+          </div>
+          <div class="columnLookBook">
+            <h3>Лукбук</h3>
+            <a href="">Faq</a>
+            <a href="">Купівля Cuade</a>
+            <a href="">Замовити retuttis</a>
+            <a href="">Програма Afflute</a>
+          </div>
+          <div class="columnContacts">
+            <h3>Контакти</h3>
+            <a href="tel:+380935322800">+380935322800</a>
+            <a href="mailto:www@example.com">www@example.com</a>
+          </div>
+        </div>
+        <div class="copy">
+          <p>Копірайт 30.11.2024</p>
+          <h1>FASHION</h1>
+        </div>
+      </footer>
+    </main>
+
+    <!-- slick -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
