@@ -1,0 +1,294 @@
+/* @media (max-width: 320px) {
+  body {
+    max-width: 320px;
+  }
+  header {
+    max-width: 320px;
+    height: 73px;
+    padding: 0;
+    margin: 0;
+  }
+  #title {
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 0px;
+    padding-right: 0;
+  }
+  .linksToSections {
+    display: none;
+  }
+  .iconsNav {
+    display: flex;
+  } */
+/* sectionFirst */
+/* .sectionFirst {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 124px 40px 178px 130px;
+    max-width: 320px;
+    background-image: url(../bckImages/bck320px.svg);
+    gap: 0px;
+  }
+  .sideIcons {
+    display: none;
+  }
+  .bck {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+  .ads {
+    display: none;
+  }
+  .collection {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .colection h1 {
+    font-weight: 700;
+    font-size: 32px;
+    gap: 0px;
+    line-height: 89%;
+    text-align: right;
+  }
+  .about img {
+    display: none;
+  }
+  .colection span p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+  }
+  .about p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+  }
+} */
+@media (max-width: 320px) {
+  body {
+    max-width: 320px;
+    margin: 0;
+    padding: 0;
+  }
+  .navHeader {
+    padding: 0;
+  }
+  #title {
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  header {
+    max-width: 320px;
+    height: 73px;
+    padding: 0;
+    margin: 0;
+  }
+
+  #title {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .linksToSections {
+    display: none;
+  }
+
+  .iconsNav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+  }
+
+  /* sectionfirst */
+  .sectionFirst {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 159px 40px 194px 110px;
+    max-width: 320px;
+    background-image: url(../bckImages/bck320px.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 0;
+    padding-right: 20px;
+  }
+
+  .sideIcons,
+  .ads,
+  .about img {
+    display: none;
+  }
+
+  .bck {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .colection {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10px;
+    margin-top: 80px;
+    padding-right: 12px;
+  }
+
+  .colection h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 89%;
+    text-align: right;
+    margin-left: -10px;
+    text-align: right;
+  }
+
+  .colection span {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+
+  .colection span p,
+  .about p {
+    font-size: 10px;
+    text-align: right;
+    line-height: 100%;
+  }
+  .collection #num {
+    font-size: 8px;
+  }
+  .about {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    padding: 0;
+    padding-right: 12px;
+    font-size: 12px;
+    width: 155px;
+  }
+
+  .about p {
+    font-size: 12px;
+  }
+
+  .about button {
+    background-color: var(--primaryBlack);
+    color: var(--primaryWhite);
+    font-size: 10px;
+    padding: 8px 7px;
+    border-radius: 28px;
+    border: none;
+    cursor: pointer;
+    width: 117px;
+    margin-top: 20px;
+    right: 0;
+    position: absolute;
+    margin-right: 10px;
+  }
+  /* sectionsecond */
+  .menuList {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+  .menuList a {
+    margin-right: 10px;
+  }
+  .adsSectionSecond {
+    display: none;
+  }
+  /* sectionthird */
+  .titleSectionThird {
+    margin: 0;
+    margin-top: 40px;
+  }
+  /* sectionfour */
+  .sliderContainerSecond {
+    width: 170px;
+  }
+  /* sectionfive */
+  .adsSectionFive {
+    margin-bottom: -50px;
+    margin-top: -50px;
+    padding: 0;
+    padding-left: 14px;
+    background-image: url(../sliderSectionFourImages/girlInJeansMedia.svg);
+  }
+  .adsSectionFive h3,
+  p {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .adsSectionFive button {
+    width: 160px;
+    height: 30px;
+    padding: 5px 17px;
+  }
+  /* footer */
+  .columns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .columns h3 {
+    padding: 0;
+    margin: 0;
+  }
+  /* sectionthird */
+  .sliderWrapper {
+    position: relative;
+    margin-top: 40px;
+  }
+  .categoryCard {
+    width: 188px;
+  }
+  .categoryCard .categoryImage {
+    width: 188px;
+    margin-left: 10px;
+  }
+  .prebtn,
+  .nextbtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 108px;
+    background-color: #9d9d9d;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    writing-mode: vertical-rl;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+
+  .prebtn {
+    left: 0;
+    z-index: 10;
+  }
+
+  .nextbtn {
+    right: 0;
+  }
+  /* sectionsix */
+  .sliderBlog {
+    display: flex;
+    flex-direction: column;
+  }
+}

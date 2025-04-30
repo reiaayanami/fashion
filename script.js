@@ -45,16 +45,25 @@ scrollToTopBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 // slider section third
-$(document).ready(function () {
-  $(".sliderCategories").slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    prevArrow: $(".prebtn"),
-    nextArrow: $(".nextbtn"),
-  });
-});
+// $(document).ready(function () {
+//   $(".sliderCategories").slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     prevArrow: $(".prebtn"),
+//     nextArrow: $(".nextbtn"),
+//   });
+// });
 // slider section four
+// $(document).ready(function () {
+//   $(".sliderItem").slick({
+//     infinite: true,
+//     slidesToShow: 4,
+//     slidesToScroll: 1,
+//     prevArrow: $(".prebtnSecond"),
+//     nextArrow: $(".nextbtnSecond"),
+//   });
+// });
 $(document).ready(function () {
   $(".sliderItem").slick({
     infinite: true,
@@ -62,5 +71,30 @@ $(document).ready(function () {
     slidesToScroll: 1,
     prevArrow: $(".prebtnSecond"),
     nextArrow: $(".nextbtnSecond"),
+    responsive: [
+      {
+        breakpoint: 768, // до 768px
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});
+
+$(document).ready(function () {
+  $(".sliderCategories").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });

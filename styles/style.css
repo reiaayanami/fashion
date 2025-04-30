@@ -495,7 +495,8 @@ header {
 }
 .sliderContainer {
   overflow: hidden;
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
 }
 .sliderCategories {
   display: flex;
@@ -541,7 +542,7 @@ header {
 }
 
 .categoryCard {
-  min-width: 300px;
+  width: 100%;
   flex-shrink: 0;
 }
 .categoryLink {
@@ -591,6 +592,7 @@ header {
   padding: 0;
   cursor: pointer;
   outline: none;
+  margin-left: 10px;
 }
 .sliderWrapperSecond .nextbtnSecond {
   background: none;
@@ -598,6 +600,7 @@ header {
   padding: 0;
   cursor: pointer;
   outline: none;
+  margin-right: 10px;
 }
 
 .sliderContainerSecond {
@@ -733,6 +736,7 @@ header {
 
 .sliderBlog {
   display: flex;
+
   gap: 24px;
   align-items: center;
   justify-content: center;
