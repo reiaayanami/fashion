@@ -864,3 +864,12 @@ footer {
   cursor: pointer;
   display: none;
 }
+
+@media (max-width: 768px) {
+  .prebtn,
+  .nextbtn,
+  .prebtnSecond,
+  .nextbtnSecond {
+    display: none;
+  }
+}

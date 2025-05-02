@@ -87,7 +87,8 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-
+    prevArrow: $(".prebtn"),
+    nextArrow: $(".nextbtn"),
     responsive: [
       {
         breakpoint: 480,
