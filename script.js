@@ -99,3 +99,29 @@ $(document).ready(function () {
     ],
   });
 });
+function headerTop() {
+  let header = $("header");
+  let navHeader = $(".navHeader");
+  let placeholder = $(".header-placeholder");
+  let headerH = header.outerHeight();
+  let lastScroll = 0;
+  $(window).on("scroll", function () {
+    let currentScroll = $(window).scrollTop();
+    if (currentScroll > headerH) {
+      if (currentScroll > lastScroll) {
+        // Скрол вниз — показати і закріпити хедер
+        navHeader.addClass("fixed").show();
+        placeholder.height(headerH);
+      } else {
+        // Скрол вгору — сховати хедер
+        navHeader.removeClass("fixed").hide();
+        placeholder.height(0);
+      }
+    } else {
+      navHeader.removeClass("fixed").show();
+      placeholder.height(0);
+    }
+    lastScroll = currentScroll;
+  });
+}
+headerTop();
