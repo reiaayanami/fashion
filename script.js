@@ -1,3 +1,17 @@
+// Мобільне меню бургер з overlay
+$(document).ready(function () {
+  const $menu = $("#mobileMenu");
+  const $overlay = $("#mobileMenuOverlay");
+  $("#burgerMenuBtn").on("click", function (e) {
+    e.preventDefault();
+    $menu.addClass("show");
+    $overlay.addClass("show");
+  });
+  $("#closeMobileMenu, #mobileMenuOverlay").on("click", function () {
+    $menu.removeClass("show");
+    $overlay.removeClass("show");
+  });
+});
 // timer
 document.addEventListener("DOMContentLoaded", function () {
   const Hours = document.getElementById("hours");

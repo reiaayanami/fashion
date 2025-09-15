@@ -31,7 +31,42 @@
         <div class="iconsNav">
           <a href=""><img src="icons/basket.svg" alt="" /></a>
           <a href=""><img src="icons/search.svg" alt="" /></a>
-          <a href=""><img src="icons/burgerMenu.svg" alt="" /></a>
+          <a href="#" id="burgerMenuBtn"
+            ><img src="icons/burgerMenu.svg" alt=""
+          /></a>
+          <!-- Overlay для мобільного меню -->
+          <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+          <!-- Сучасне мобільне меню -->
+          <aside class="mobile-menu" id="mobileMenu" aria-label="Мобільне меню">
+            <button id="closeMobileMenu" aria-label="Закрити меню">×</button>
+            <nav>
+              <a href="">Головна</a>
+              <a href="#catalog">Категорії</a>
+              <a href="#reccomanded">Товари</a>
+              <a href="#news">Блоги</a>
+              <a href="">Про бренд</a>
+              <a href="">Магазини поблизу</a>
+              <a href="">Обслуговування клієнтів</a>
+              <a href="">FAQ</a>
+              <hr style="width: 90%; margin: 18px 0 10px 0; opacity: 0.18" />
+              <a href="" class="login-link"
+                ><svg
+                  style="vertical-align: middle; margin-right: 7px"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="#e75480"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="7" r="4" />
+                  <path d="M5.5 21a7.5 7.5 0 0 1 13 0" /></svg
+                >Вхід в акаунт</a
+              >
+            </nav>
+          </aside>
         </div>
       </nav>
     </header>

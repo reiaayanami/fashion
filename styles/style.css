@@ -1,3 +1,105 @@
+.mobile-menu a.login-link {
+  color: #e75480 !important;
+  font-weight: 800;
+}
+.mobile-menu a.login-link:hover {
+  background: #ffe6f0;
+  color: #c2185b !important;
+}
+/* Overlay для мобільного меню */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30, 32, 38, 0.32);
+  z-index: 9998;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.mobile-menu-overlay.show {
+  display: block;
+  opacity: 1;
+}
+/* Мобільне меню */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  max-width: 90vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(18px);
+  border-radius: 0 0 0 24px;
+  box-shadow: -4px 0 32px 0 rgba(60, 60, 90, 0.16);
+  z-index: 9999;
+  padding: 48px 36px 32px 32px;
+  transform: translateX(110%);
+  opacity: 0;
+  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.22s;
+}
+.mobile-menu.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+@media (max-width: 600px) {
+  .mobile-menu {
+    width: 100vw;
+    border-radius: 0;
+    padding: 44px 18px 24px 18px;
+  }
+}
+.mobile-menu.show {
+  display: flex;
+  transform: translateX(0);
+}
+.mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 24px;
+}
+.mobile-menu a {
+  font-size: 1.25rem;
+  color: #23234c;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 12px 0 12px 10px;
+  border-radius: 12px;
+  letter-spacing: 0.01em;
+  transition: background 0.18s, color 0.18s;
+  width: 100%;
+  display: block;
+  background: none;
+}
+.mobile-menu a:hover {
+  background: #f2f2fa;
+  color: #4a3cff;
+}
+#closeMobileMenu {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: #b0b0b0;
+  transition: color 0.18s;
+  z-index: 2;
+}
+#closeMobileMenu:hover {
+  color: #4a3cff;
+}
 .navHeader.fixed {
   height: 80px;
   box-sizing: border-box;
@@ -37,12 +139,10 @@ header {
 }
 .navHeader.fixed {
   margin: 0;
-
   background-color: var(--primaryWhite);
   height: 50px;
   width: 100%;
   position: fixed;
-
   z-index: 1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
